@@ -1,0 +1,294 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>股作手 - 账户价值 = 选股能力 + 交易时机 + 交易纪律 + 风控能力</title><meta name="author" content="股作手"><meta name="copyright" content="股作手"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="股作手">
+<meta property="og:url" content="https://akavalue.github.io/page/4/index.html">
+<meta property="og:site_name" content="股作手">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://akavalue.github.io/image/blog/gu.jpg">
+<meta property="article:author" content="股作手">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://akavalue.github.io/image/blog/gu.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/image/blog/gu.jpg"><link rel="canonical" href="https://akavalue.github.io/page/4/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '股作手',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 8.1.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/image/blog/gu.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">49</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header" style="background-image: url(/image/blog/IMG001.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">股作手</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">股作手</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://t.me/akaValuesBot" target="_blank" title="Telegram"><i class="fa-brands fa-telegram" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://t.me/akaValuesBot" target="_blank" title="Messenger"><i class="fa-brands fa-facebook-messenger" style="color: #24292e;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover"><a href="/2024/04/30/R20240430/" title="“初心“错了，会一直错下去。（2024年4月成绩单）"><img class="post-bg" src="/image/post/IMG070.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="“初心“错了，会一直错下去。（2024年4月成绩单）"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/04/30/R20240430/" title="“初心“错了，会一直错下去。（2024年4月成绩单）">“初心“错了，会一直错下去。（2024年4月成绩单）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-04-29T17:01:01.000Z" title="发表于 2024-04-30 01:01:01">2024-04-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%AF%AD%E5%BD%95/">交易语录</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/">趋势交易</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%86%8A%E7%86%8A/">熊熊</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%88%90%E7%BB%A9%E5%8D%95/">成绩单</a></span></div><div class="content">投资的初心是赚钱，赚钱的逻辑在哪里？赌徒真以为自己在投资！资本论：一百年前就明白了。为了100％的利润，它就敢践踏一切人间法律；有300％的利润，它就敢犯任何罪行，甚至冒绞首的危险。 网上最流行的妖言（“10 万翻倍，三年 5 倍，五年 10 倍”）。自己理解一下和澳门大家乐押大小，有区别吗？关键是赌徒还很自信的相信自己能从赌桌上赢大钱出来。这才是笑话。 （纳斯达克指数）是100个成份股（道琼斯工业指数）是30个成份股（标普）是500个成份股（日经指数）是225个成份股 全世界的资金中，80%以上的成交量都集中在这不到（1000）个成份股上。唯独中国大A核心资产，沪深300难以取得超额。量化不断地进行下沉、机构打着“价值成长”炒小、炒新、炒微、炒垃圾。 因为这样赌，赢容易翻倍。所以：初心错了，会一直错下去。 “朋友圈错了”，也会一直错下去热衷于渣浪、冲名人社区、各种吧、各种群。和韭菜争论、和韭菜学习，和韭菜沟通、最终成为韭菜。这还是最好的结果。因为马扁子已经占领了这些地方，它们知道这里韭菜多，好骗，根本骗不完。 他既不和你血脉相连、沾亲带故，他自己赚钱都来不及，还带着你赚钱，那不是笑话？她既不和你精脉相...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2024/03/30/R20240330/" title="“久盘必跌”还是““横有多长竖有多高”（2024年3月成绩单）"><img class="post-bg" src="/image/post/IMG067.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="“久盘必跌”还是““横有多长竖有多高”（2024年3月成绩单）"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/03/30/R20240330/" title="“久盘必跌”还是““横有多长竖有多高”（2024年3月成绩单）">“久盘必跌”还是““横有多长竖有多高”（2024年3月成绩单）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-03-29T17:01:01.000Z" title="发表于 2024-03-30 01:01:01">2024-03-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%AF%AD%E5%BD%95/">交易语录</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/">趋势交易</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%86%8A%E7%86%8A/">熊熊</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%88%90%E7%BB%A9%E5%8D%95/">成绩单</a></span></div><div class="content">“久盘必跌”还是““横有多长竖有多高””坊间有俗语，“久盘必跌”。坊间又有俗语，“横有多长，竖有多高”。两句话都有道理，却自相矛盾。 之所以“久盘必跌”，是因为买方资金越来越弱。横盘过程越久，赚钱效应越差，迟迟无法拉起是因为卖方抛压大。这种情况下，当买方资金枯竭，卖方仍然有大量筹码未抛售，就只能砸盘了。 之所以“横有多长，竖有多高”，是资金在低位横盘的时候吸筹，卖方筹码越抛越少。横盘过程中，资金一点点地吸收筹码，最终把卖方压榨得干干净净，就开始了拉升。 那些被横盘折磨得死去活来的资金，会在刚启动的时候抛售，而主力吃饱了筹码，也就会大幅度拉升了。  横盘是一种多空平衡的微妙状态，买方不断吸筹，卖方不断抛售，而当双方走到尽头，就是方向的选择。  为什么横盘后会有不同的结果？其实关键就在于，横盘是什么情况下产生的。如果是在下跌以后横盘，那么后续大概率就是盘久必跌，尤其是大盘； 反过来，如果是涨上去以后横盘的，后续基本就是横有多长，竖有多高，或者至少对个股来讲，它是强势盘口。  2024-2-28日天量以后，量能再无放大。上证指数小范围内盘整多日，趋势线：均线系统在逼近。市场变盘的信号之一。   踏空、逼空“逼...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2024/03/01/R20240301/" title="“天量天价”还是“底部放量”？"><img class="post-bg" src="/image/post/IMG065.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="“天量天价”还是“底部放量”？"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/03/01/R20240301/" title="“天量天价”还是“底部放量”？">“天量天价”还是“底部放量”？</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-02-29T17:01:01.000Z" title="发表于 2024-03-01 01:01:01">2024-03-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%AF%AD%E5%BD%95/">交易语录</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/">趋势交易</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%86%8A%E7%86%8A/">熊熊</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%88%90%E7%BB%A9%E5%8D%95/">成绩单</a></span></div><div class="content">日成交量1.4万亿国际关系、经济形势、行业趋势、个股优势，等等这些。不是我等小辈能分析明白的。我们既不是学者、也不是专家、更不是全才，在这个信息爆炸的时代，我们为什么要消化别人的“二手消息”？。 对于股市来说：上述的种种，最终都体现在“价”、“量”、“趋势”上。我们去整那些没用的，不是自己寻找烦扰吗。 2024-2-28日，上交所成交5765亿，深交所成交7800亿，加起来13565亿。这就离了个大谱，股灾之前每天也就6000来亿，后来救市把场子活跃起来每天也就8000-9000亿， 今天这没来由的突然给干到了13500亿，那指定是有啥玩意在作妖。  如何判断？？？“成交量出现天量”一定是市场变盘的信号之一。无法判断向上或者向下，完全是人的经验，它的概率是50%，何必去操那个心。 1、如果短线看，市场在春节期间走出深V，出现了大级别的反弹，那么目前处于高位。“量在价先，即天量见天价，地量见地价；” 2、如果长线看，市场还在3000点附近的低位，出现了天量行情，那么目前处于低位。“底部放量，闭眼买进” 两个完全不同的结论，该怎么操作。 1、对于稳健的投资者。可以等5-9个交易日，等趋势明显了，再做决定。 ...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2024/02/27/R20240227/" title="刚刚过完一个春节，就忘记了所有的痛（2024年2月成绩单）"><img class="post-bg" src="/image/post/IMG063.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="刚刚过完一个春节，就忘记了所有的痛（2024年2月成绩单）"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/02/27/R20240227/" title="刚刚过完一个春节，就忘记了所有的痛（2024年2月成绩单）">刚刚过完一个春节，就忘记了所有的痛（2024年2月成绩单）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-02-26T17:01:01.000Z" title="发表于 2024-02-27 01:01:01">2024-02-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%AF%AD%E5%BD%95/">交易语录</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/">趋势交易</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%86%8A%E7%86%8A/">熊熊</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%88%90%E7%BB%A9%E5%8D%95/">成绩单</a></span></div><div class="content">市场重回3000点春节假期2-1日到20日，正好空仓错过了大A历史上惊心动魄的一个大V过程。加上节后准备元宵节狂欢等事宜。2024-2-23日，上证在9连阳的反弹中只冲3000点。现在开始2024年的年度规划。好像错过了几个亿。 市场中的机会天天有，不是错过了这村就没有那店了，但是你的本金不是天天能加。趋势交易的精髓是确定性，在不确定、拿不住的时候，空仓休息是最好的选择。交易的原则是：第一、不亏本，第二、记住第一条。  金融做大做强，靠小微盘是炒不出来的  （纳斯达克指数）是100个成份股（道琼斯工业指数）是30个成份股（标普）是500个成份股（日经指数）是225个成份股 全世界的资金中，80%以上的成交量都集中在这不到（1000）个成份股上。唯独中国大A核心资产，沪深300难以取得超额，量化不断地进行下沉、机构打着“价值成长”炒小、炒新、炒微。都把GJD当作对手盘，深沪300是不碰的。  刚刚从ICU中出来，就忘记了所有的痛  0607股改牛-&gt;救市、1415年杠杆牛-&gt;救市、1920基金牛-&gt;救市。都没有改变中国大A的结构性问题。中小微和大蓝筹“劣币驱除良币”。 正是A股小微股票的...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2024/01/30/R20240130/" title="面对大跌，“减仓”而不是“抄底”（2024年1月成绩单）"><img class="post-bg" src="/image/post/IMG059.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="面对大跌，“减仓”而不是“抄底”（2024年1月成绩单）"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/01/30/R20240130/" title="面对大跌，“减仓”而不是“抄底”（2024年1月成绩单）">面对大跌，“减仓”而不是“抄底”（2024年1月成绩单）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-29T17:01:01.000Z" title="发表于 2024-01-30 01:01:01">2024-01-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%AF%AD%E5%BD%95/">交易语录</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/">趋势交易</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%86%8A%E7%86%8A/">熊熊</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%88%90%E7%BB%A9%E5%8D%95/">成绩单</a></span></div><div class="content">面对大跌，“减仓”而不是“抄底”在2024-1-25日，我们用1&#x2F;3的资金去试一试。参见：“反转”还是“下跌中继”？值得用资金去试一试。 今天（2024-1-30）市场给出了答案：市场是检验真理的唯一标准。  不和市场作对，趋势错、要及时小止损认错。   2024年1月成绩单 2024年1月 亏损比例88.48%     封面  </div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2024/01/25/R20240125/" title="“反转”还是“下跌中继”？值得用资金去试一试。"><img class="post-bg" src="/image/post/IMG058.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="“反转”还是“下跌中继”？值得用资金去试一试。"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/01/25/R20240125/" title="“反转”还是“下跌中继”？值得用资金去试一试。">“反转”还是“下跌中继”？值得用资金去试一试。</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-24T17:01:01.000Z" title="发表于 2024-01-25 01:01:01">2024-01-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%AF%AD%E5%BD%95/">交易语录</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/">趋势交易</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%86%8A%E7%86%8A/">熊熊</a></span></div><div class="content">“反转”还是“下跌中继”？值得用资金去试一试。一根大阳线，千军万马来相见；三根大阳线，股神大V都出现。五根大阳线，散户追高不听劝；七根大阳线，主力砸盘说再见。 2024-1-25日，沪深300已经连续拉了三个大阳线。那么到底是“趋势反转”入场，还是“下跌中继”不理它？作为一个趋势交易者，首先要做到的就是不断的训练自己，不要预测。 首先要想到的是：不要预测。不能去“赌”：“趋势反转”入场，也不能去“赌”：“下跌中继”不理它。 一旦赌性养成，凭赌性赚的钱，也会凭赌性亏回去，没有人能在赌场中长期生存下去。 趋势交易的建仓策略先说结论，再慢慢理解。 春节前的交易策略，“反转”还是“下跌中继”？没有神预测，没有牛操作，只能用资金去实践，作为检验真理的唯一标准。 市场会给出答案：趋势对，我们加仓让利润奔跑。趋势错，我们小止损撤退。 交易标的：沪深300（510300）和创业板指（159915） 交易方法： 1、正向操作：1&#x2F;3的资金建仓。（如果上涨盈利超过5%，再投入1&#x2F;3资金。）（如果上涨盈利超过10%，再投入最后的1&#x2F;3资金）（直到趋势过顶后，撤退） 2、反向操作：（如果下跌亏损超...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2024/01/07/R20240107/" title="保持空仓、空仓、空仓是最重要的交易"><img class="post-bg" src="/image/post/IMG056.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="保持空仓、空仓、空仓是最重要的交易"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/01/07/R20240107/" title="保持空仓、空仓、空仓是最重要的交易">保持空仓、空仓、空仓是最重要的交易</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-01-06T17:01:01.000Z" title="发表于 2024-01-07 01:01:01">2024-01-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%AF%AD%E5%BD%95/">交易语录</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/">趋势交易</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%86%8A%E7%86%8A/">熊熊</a></span></div><div class="content">为什么要保持空仓不和本金作对，趋势不明显、要空仓休息。我们研究沪深300的日K线图，肉眼可见，这趋势不明显？。 很不明显的不是，绝对不是一个上升趋势。我们不空仓休息，难道去买套找虐？多韭菜会认为，市场的认知都在：现在的点位足够低了，下跌的空间已经不大了、等等等。 但是对于一个趋势交易者来说：不见趋势好转，不建仓入场。空仓休息，它不香吗？  为什么很难保持空仓回顾-一个交易者的人性修炼-嫉妒。嫉妒（拉丁语：invidia，英语：envy）－－因对方所拥有的资产比自己丰富而恼恨他人。  （怕反弹）  因为一旦反弹，或者见底发生大级别的反弹，别人赚钱了，我没有赚到钱，非常的不爽。 这个心理会一直困扰着韭菜，需要通过特别的交易训练去克服。任何的反弹、所谓的逼空都是这个心理的交易作战。 趋势交易者，只赚趋势确定的那一段的钱，其他的钱不是能力范围的钱。 再怎么说，趋势交易没有损失本金、没有在下跌的过程中，让你满世界骂娘，让你夜不能寐，赚钱的机会永远都存在，本金的机会不是永远都存在。 所谓：留得青山在，不怕没柴烧。（如果你在下跌的过程中，已经把子弹打完了，已经躺平了，甚至已经爆仓了，后续的所有大牛市已经和你没有关系了...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2023/12/28/R20231228/" title="3000点以下的反弹，高收益还是高风险？"><img class="post-bg" src="/image/post/IMG054.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="3000点以下的反弹，高收益还是高风险？"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/12/28/R20231228/" title="3000点以下的反弹，高收益还是高风险？">3000点以下的反弹，高收益还是高风险？</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-27T17:01:01.000Z" title="发表于 2023-12-28 01:01:01">2023-12-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%AF%AD%E5%BD%95/">交易语录</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/">趋势交易</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%86%8A%E7%86%8A/">熊熊</a></span></div><div class="content">3000点以下的反弹，高收益还是高风险？2023年12月28日，在3000点下方展开了反弹。这次反弹到底是一个“反弹”，还是一个“反转”呢？理性的趋势交易者不去预测。 （其实这软件花里胡哨的屁用没有，只是看起来合适装13） 上轮的波峰到波谷是 （3089-2923）.本轮下跌到了（2882-2890） 我个人认为这不是一个稳固的W底。但是也可以理解为：上证在：（2923-2882-2890）构筑了一个W底。目前趋势上并没有摆脱“趋势线”的压制，如果在（2882）重新构筑一个稳固的W底，那么底部就很明确了。 但是凡事没有绝对，所以这个时候的反弹，即使高收益，也是高风险，（愿意的人可以博，不愿意的人可以继续休息） 我们小韭菜不是那个能够扭转乾坤的人，等趋势向好后再建仓进场。  “盈亏同源”在本次反弹中，吃到糖的朋友，大部分都是从3000点或者以上，就开始左侧交易开始“抄底”的。 他能够忍受上2周的下跌折磨，也应该享受反弹的快感。 但是：在大的趋势没有发生改变的时候：轻仓的建议继续轻仓等待。 心急吃不到热豆腐，大A不是多劳多得的地方。 那些伪价投的名言市场贪婪时我贪婪，市场恐惧时我恐惧。 我理解这句话，最迷惑...</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/3/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/#content-inner">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/#content-inner">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/#content-inner">7</a><a class="extend next" rel="next" href="/page/5/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/image/blog/gu.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">股作手</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">49</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://t.me/akaValuesBot"><i class="fa-brands fa-bots"></i><span>Messenger</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://t.me/akaValuesBot" target="_blank" title="Telegram"><i class="fa-brands fa-telegram" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://t.me/akaValuesBot" target="_blank" title="Messenger"><i class="fa-brands fa-facebook-messenger" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><br>改变交易结果：<br>---------<br><br>首先要改变交易的思维，<br>通过思维改变交易的行为；<br>最后做到知行合一；<br><br>---------<br>​妳做到了吧！</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/07/28/R20260728/" title="前方高能！写在巨无霸上市之际"><img src="/image/post/IMG114.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前方高能！写在巨无霸上市之际"/></a><div class="content"><a class="title" href="/2026/07/28/R20260728/" title="前方高能！写在巨无霸上市之际">前方高能！写在巨无霸上市之际</a><time datetime="2026-07-27T17:01:01.000Z" title="发表于 2026-07-28 01:01:01">2026-07-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/07/04/R20260704/" title="(2026年Q2成绩单)牛市如何保住收益！"><img src="/image/post/IMG113.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="(2026年Q2成绩单)牛市如何保住收益！"/></a><div class="content"><a class="title" href="/2026/07/04/R20260704/" title="(2026年Q2成绩单)牛市如何保住收益！">(2026年Q2成绩单)牛市如何保住收益！</a><time datetime="2026-07-03T17:01:01.000Z" title="发表于 2026-07-04 01:01:01">2026-07-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/06/02/R20260602/" title="国家队撤了？！"><img src="/image/post/IMG103.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="国家队撤了？！"/></a><div class="content"><a class="title" href="/2026/06/02/R20260602/" title="国家队撤了？！">国家队撤了？！</a><time datetime="2026-06-01T17:01:01.000Z" title="发表于 2026-06-02 01:01:01">2026-06-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/03/30/R20260330/" title="(2026年Q1成绩单)极致抱团、昔日重现！"><img src="/image/post/IMG101.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="(2026年Q1成绩单)极致抱团、昔日重现！"/></a><div class="content"><a class="title" href="/2026/03/30/R20260330/" title="(2026年Q1成绩单)极致抱团、昔日重现！">(2026年Q1成绩单)极致抱团、昔日重现！</a><time datetime="2026-03-29T17:01:01.000Z" title="发表于 2026-03-30 01:01:01">2026-03-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/24/R20251224/" title="(2025年Q4成绩单)拥抱泡沫，顺势而为！"><img src="/image/post/IMG099.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="(2025年Q4成绩单)拥抱泡沫，顺势而为！"/></a><div class="content"><a class="title" href="/2025/12/24/R20251224/" title="(2025年Q4成绩单)拥抱泡沫，顺势而为！">(2025年Q4成绩单)拥抱泡沫，顺势而为！</a><time datetime="2025-12-23T17:01:01.000Z" title="发表于 2025-12-24 01:01:01">2025-12-24</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BA%A4%E6%98%93%E5%9F%BA%E7%A1%80/"><span class="card-category-list-name">交易基础</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BA%A4%E6%98%93%E8%AF%AD%E5%BD%95/"><span class="card-category-list-name">交易语录</span><span class="card-category-list-count">33</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BA%A4%E6%98%93%E8%BF%9B%E9%98%B6/"><span class="card-category-list-name">交易进阶</span><span class="card-category-list-count">10</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F/" style="font-size: 1.2em; color: #999da3">交易系统</a> <a href="/tags/%E7%89%9B%E7%89%9B/" style="font-size: 1.35em; color: #99a3b1">牛牛</a> <a href="/tags/%E5%85%A5%E5%B8%82%E7%AC%AC%E4%B8%80%E8%AF%BE/" style="font-size: 1.25em; color: #999fa7">入市第一课</a> <a href="/tags/%E9%80%89%E8%82%A1%E7%A7%98%E7%B1%8D/" style="font-size: 1.1em; color: #999">选股秘籍</a> <a href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/" style="font-size: 1.5em; color: #99a9bf">趋势交易</a> <a href="/tags/%E7%86%8A%E7%86%8A/" style="font-size: 1.4em; color: #99a5b6">熊熊</a> <a href="/tags/%E8%B4%A6%E6%88%B7%E4%BB%B7%E5%80%BC/" style="font-size: 1.15em; color: #999b9e">账户价值</a> <a href="/tags/%E7%86%8A%E7%89%9B/" style="font-size: 1.3em; color: #99a1ac">熊牛</a> <a href="/tags/%E6%8A%95%E8%B5%84%E5%BF%83%E6%80%81/" style="font-size: 1.1em; color: #999">投资心态</a> <a href="/tags/%E6%88%90%E7%BB%A9%E5%8D%95/" style="font-size: 1.45em; color: #99a7ba">成绩单</a> <a href="/tags/%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87/" style="font-size: 1.1em; color: #999">技术指标</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      <a class="card-more-btn" href="/archives/"
+            title="查看更多">
+            <i class="fas fa-angle-right"></i>
+          </a>
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/07/">
+            <span class="card-archive-list-date">
+              七月 2026
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/06/">
+            <span class="card-archive-list-date">
+              六月 2026
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/03/">
+            <span class="card-archive-list-date">
+              三月 2026
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/12/">
+            <span class="card-archive-list-date">
+              十二月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/09/">
+            <span class="card-archive-list-date">
+              九月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/07/">
+            <span class="card-archive-list-date">
+              七月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/04/">
+            <span class="card-archive-list-date">
+              四月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/12/">
+            <span class="card-archive-list-date">
+              十二月 2024
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">49</div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By 股作手</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.2</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js@3.0.0/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  },
+  processSubtitle: (content, extraContents = []) => {
+    if (true) {
+      const sub = [].slice()
+
+      if (extraContents.length > 0) {
+        sub.unshift(...extraContents)
+      }
+
+      if (typeof content === 'string') {
+        sub.unshift(content)
+      } else if (Array.isArray(content)) {
+        sub.unshift(...content)
+      }
+
+      sub.length > 0 && typedJSFn.init(sub)
+    } else {
+      document.getElementById('subtitle').textContent = typeof content === 'string' ? content :
+        (Array.isArray(content) && content.length > 0 ? content[0] : '')
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  btf.getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js')
+    .then(() => {
+      jinrishici.load(result => {
+        if (result && result.data && result.data.content) {
+          typedJSFn.processSubtitle(result.data.content)
+        } else {
+          throw new Error('Failed to parse the return value of Jinrishici API')
+        }
+      })
+    })
+    .catch(err => {
+      console.error('Failed to get the Jinrishici API:', err)
+      typedJSFn.processSubtitle(0)
+    })
+}
+typedJSFn.run(subtitleType)
+</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-ribbon.min.js" size="128" alpha="0.6" zIndex="-1" mobile="true" data-click="false"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="股作手" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div></body></html>

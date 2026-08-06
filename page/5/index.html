@@ -1,0 +1,294 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>股作手 - 账户价值 = 选股能力 + 交易时机 + 交易纪律 + 风控能力</title><meta name="author" content="股作手"><meta name="copyright" content="股作手"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="股作手">
+<meta property="og:url" content="https://akavalue.github.io/page/5/index.html">
+<meta property="og:site_name" content="股作手">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://akavalue.github.io/image/blog/gu.jpg">
+<meta property="article:author" content="股作手">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://akavalue.github.io/image/blog/gu.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/image/blog/gu.jpg"><link rel="canonical" href="https://akavalue.github.io/page/5/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=5.5.4"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.13.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '股作手',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><meta name="generator" content="Hexo 8.1.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/image/blog/gu.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">49</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header" style="background-image: url(/image/blog/IMG001.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">股作手</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">股作手</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://t.me/akaValuesBot" target="_blank" title="Telegram"><i class="fa-brands fa-telegram" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://t.me/akaValuesBot" target="_blank" title="Messenger"><i class="fa-brands fa-facebook-messenger" style="color: #24292e;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover"><a href="/2023/12/18/R20231218/" title="挣扎3000点，到了关键的时候？"><img class="post-bg" src="/image/post/IMG053.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="挣扎3000点，到了关键的时候？"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/12/18/R20231218/" title="挣扎3000点，到了关键的时候？">挣扎3000点，到了关键的时候？</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-17T17:01:01.000Z" title="发表于 2023-12-18 01:01:01">2023-12-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%AF%AD%E5%BD%95/">交易语录</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/">趋势交易</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%86%8A%E7%86%8A/">熊熊</a></span></div><div class="content">“多看少动”A股不是一个“多劳多得”的地方，在相对的底点。少追热点，少交易，保持一个好的交易心态很重要。 “盈亏同源”，空杀多，到多杀多？现在该怎么办？对于仓位较重的交易者来说，我个人的建议是减仓。 因为在关键点位的大佬决战时，我作为小韭菜是绝对不参与的，特别容易误伤。 但是：在趋势向下的过程中，随时都有反弹，可能是大级别的反弹。如果在此减仓后，发生了反弹，有些交易者的心态就崩溃了。如果是一个理性的趋势交易者，应该减仓。 对于仓位轻的交易者，一定不要抄底。 我们小韭菜不是那个能够扭转乾坤的人，等趋势向好后再建仓进场。挣扎3000点，到了关键的时候？？在第一次震荡后，上证在2923-3089的区间形成了第一次波谷和波峰。 第二次震荡2923好像要形成W底的时候，今天2023-12-18 上证再次下跌到2924，距离上次2923只有一步之遥。  对于趋势交易者来说是个坏消息  如果“一个波谷低于前一个波谷2923”，那么就会形成一个不稳固的W底。 而“一个波峰低于一个波峰3089”，那么可能又进入下一轮下跌的漩涡中。    封面  </div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2023/12/06/R20231206/" title="再破3000点，是构筑W底还是下跌中继？"><img class="post-bg" src="/image/post/IMG051.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="再破3000点，是构筑W底还是下跌中继？"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/12/06/R20231206/" title="再破3000点，是构筑W底还是下跌中继？">再破3000点，是构筑W底还是下跌中继？</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-12-05T17:01:01.000Z" title="发表于 2023-12-06 01:01:01">2023-12-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%AF%AD%E5%BD%95/">交易语录</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/">趋势交易</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%86%8A%E7%86%8A/">熊熊</a></span></div><div class="content">趋势说：再破3000点，是构筑W底还是下跌中继？在密集的救市措施出台后，A50走走出了一轮反弹行情，止步于3089后，开始新一轮的下跌。这正好符合趋势理论。 这时，我们无法判断趋势是改变了，还是原有趋势的震荡。但是很明确的是，已经完成了一轮波峰波谷。因此：第二轮的波峰和波谷特别的关键。 在图中，V底是不可能了。我们明显的可以看到，如果此轮调整波谷高于上轮，那么趋势会发生改变。 关键点就在这几天。如果能够“一个波谷高于前一个波谷2923”，那么就会形成稳固的W底。再加上下轮反弹，如果能够“一个波峰高于一个波峰3089”，那么就能发生趋势的逆转。  “盈亏同源”现在该怎么办？最重要的是“盈亏同源”。作为一个长期的趋势交易者，目前的持仓应该在50%或者以下，因为前几个月明显的在一个下跌的趋势中。 趋势交易者应该耐心的等待稳固的W底构成后，均线走平后，再考虑建仓事宜。 但是绝大部分交易者应该是处于全仓的状态，这是交易心理决定的。一个韭菜基本上是不会空仓等待的，他来股市的目的基本都是反复搏杀。 如果已经“满仓到这个点位了”，就满仓等待反弹吧。这也是无可奈何的“盈亏同源” 特别注意的是：如果不是按照趋势好的方向发展...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2023/11/05/R20231105/" title="3000点，反弹？反转？都不要预测。"><img class="post-bg" src="/image/post/IMG047.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="3000点，反弹？反转？都不要预测。"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/11/05/R20231105/" title="3000点，反弹？反转？都不要预测。">3000点，反弹？反转？都不要预测。</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-11-04T17:01:01.000Z" title="发表于 2023-11-05 01:01:01">2023-11-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%AF%AD%E5%BD%95/">交易语录</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/">趋势交易</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%86%8A%E7%86%8A/">熊熊</a></span></div><div class="content">所谓势不可挡，救市虽可以改变短线，但是趋势还是自然规律2023年10月，密集的救市措施出台了： 1、交易所经手费下调30%。 2、券商集体下调佣金0.00146%。 3、印花税下调50%。 4、官方出台了史上最严厉减持新规，超过一半以上的大股东失去套现的资格。 5、融资保证金比例从100%下调至80%，融券保证金比例从50%上调至80% 6、代表中央政府的汇金开始抄底增持宽基ETF。 但是上证指数还是跌破了3000点，在2923.51点启动了一轮反弹？反转？。 这更加说明了所谓的“势不可挡”，趋势是市场经济的自然规律。我们明显的可以看到，一个波谷低于一个波谷，且创新低。是一个明显的下跌趋势。那么救市措施无效了？ 当然不是。趋势的改变，也是通过一浪一浪的逐波推高，我个人理解的外因通过内因起作用。  国安发声金融战：国家安全部突然发声，点出金融“四大空者”！再不涨要抓人了，有没有想起2015年期间公安部抓人的那幕？ 2015年11月1日，徐翔涉嫌违法犯罪，被公安机关依法采取刑事强制措施。 2016年4月29日从青岛市公安机关获悉，上海泽熙投资管理有限公司法定代表人、总经理徐翔等人涉嫌操纵证券市场、内幕交易犯...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2023/10/20/R20231020/" title="3000点，破？不破？都不要预测。"><img class="post-bg" src="/image/post/IMG042.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="3000点，破？不破？都不要预测。"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/20/R20231020/" title="3000点，破？不破？都不要预测。">3000点，破？不破？都不要预测。</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-19T17:01:01.000Z" title="发表于 2023-10-20 01:01:01">2023-10-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%AF%AD%E5%BD%95/">交易语录</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/">趋势交易</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%86%8A%E7%86%8A/">熊熊</a></span></div><div class="content">3000点，破？不破？都不要预测。2023年10月20日，上证跌破3000点，有人忙着“补仓”、有人忙着“割肉”、有人忙着“清仓”，更多的人忙着“骂人”和“关灯吃面”。最多人的思维都是情不自禁的冒出一个“底在哪里”？ 不要预测、不要预测、不要预测。重要的事情讲三遍。趋势交易中，有一个重要的思维改变，就是不要预测，预测涨跌、分析这分析那、根据这根据那、因为这因为那、所以预测个结论。这是一个小白韭菜最喜欢干的事情，体现出自己的本事又多高。预测成功的概率和骰子的概率差不过，这是数学原理决定的。 趋势交易的核心：就是一个不预测的右侧交易。 3000点：大A终于回家了对大A来说，3000点就像家一样温暖。不管你兜兜转转去了哪里，最后总得回家吧？到家了就舒服了，心里边也踏实了。这就叫“回家的诱惑”！ 该割肉的可以割肉了，该进场也准备进场了。今天茅台跌了5个多点，去年10月、2018年10月那波大底的既视感又来了。我说你们空头怎么一点新意都没有？就喜欢抢着过双十一，飞天茅台抢不到，股价倒是砸得欢。 五年前的今天，上证指数见底2018年国庆回来之后，市场就开始跳空狂泻，10月底茅台出了份不及预期的三季报，直接被干到跌停...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2023/10/18/R20231018/" title="中国移动-截断亏损，让利润奔跑"><img class="post-bg" src="/image/post/IMG039.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="中国移动-截断亏损，让利润奔跑"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/18/R20231018/" title="中国移动-截断亏损，让利润奔跑">中国移动-截断亏损，让利润奔跑</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-17T17:01:01.000Z" title="发表于 2023-10-18 01:01:01">2023-10-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%BF%9B%E9%98%B6/">交易进阶</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/">趋势交易</a></span></div><div class="content">截断亏损，让利润奔跑我们分析了在下跌趋势下的中国中免 ，什么是截断亏损？就是在确认了下跌趋势，就要撤退，无论是赚钱还是亏钱。因为成本价已经没有意义了，交易者关心的是后续的趋势是向上，还是向下。 让利润奔跑，就是确认了上涨趋势后，就一直坚守。中国移动2022年2月到2023年10月的周K线。我们可以从这张图看到，中国移动在一个长达1年的上涨趋势中。它的均线系统一直是很明显的上涨趋势中。  这样的股票，有人会跟吗？答案是几乎没有人跟 . 我们从F10公开资料可以看到股东总人数(户)：从2022-02-28日10.25万户、2023-06-30日10.45万户。也就是说股价在1年内翻倍，几乎没有什么人跟上趋势赚钱。 左侧交易和右侧交易两种模式：右侧交易，越涨越买，一直买到趋势发生改变。 股价从50到100，每一个平台上，都没有韭菜追，结果是看着“中特估”的五千亿“中移动”翻倍。 中国移动-截断亏损，让利润奔跑 是什么样的交易心理，导致如此大牛股没人追？回顾-一个交易者的人性修炼-贪婪：“尤其是指金钱或权力的过分追求。”。性七宗罪。自古以来，人们的思维中都有“买便宜”、“占便宜”。50的中移动它不买，60它不会...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2023/10/16/R20231016/" title="中国中免-养成右侧交易的习惯、不要抄底"><img class="post-bg" src="/image/post/IMG035.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="中国中免-养成右侧交易的习惯、不要抄底"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/16/R20231016/" title="中国中免-养成右侧交易的习惯、不要抄底">中国中免-养成右侧交易的习惯、不要抄底</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-10-15T17:01:01.000Z" title="发表于 2023-10-16 01:01:01">2023-10-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%BF%9B%E9%98%B6/">交易进阶</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/">趋势交易</a></span></div><div class="content">养成右侧交易的习惯。不要抄底。回顾-什么左侧交易 ，什么是右侧交易。在真实的案例中，我们看一下中国中免在2021年5月到2023年10月的周K线走势。这样能够更加明白左侧和右侧交易。“预测底”、“抄底”会有什么后果。 我们可以从这张图看到，中国中免在一个长达2年的下跌趋势中。它的均线系统一直是很明显的下跌趋势中。 这样的股票，还会有人碰吗？不仅仅有，还是非常的多。我们从F10公开资料可以看到股东总人数(户)：2021-06-30从13.88万，2023-06-30飙升到28.81万。也就是说，股价从350到90，直接活埋了近15万韭菜。 可以说是：你抄它的底，它抄你的家。 左侧交易和右侧交易两种模式：左侧交易，越跌越买，一直买到底；“抄底”。 股价从350到90，每一个平台上，都有大量的韭菜“抄底”，300、200、100，最后无法自拔。 中国中免-你抄它的底，它抄你的家 是什么样的交易心理，导致如此多的韭菜被连根拔起？回顾-一个交易者的人性修炼-色欲：“过分爱慕对方”。2020年源起的所谓“价值投资”、“商业护城河”、“核心资产”、“好股票越跌越卖”、这些神话的标签，被牢牢的植入在你的投资思维中，并深...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2022/05/23/W20220523/" title="你必须了解的3个指标-MA、MACD、BOLL"><img class="post-bg" src="/image/post/IMG108.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="你必须了解的3个指标-MA、MACD、BOLL"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/05/23/W20220523/" title="你必须了解的3个指标-MA、MACD、BOLL">你必须了解的3个指标-MA、MACD、BOLL</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-05-22T17:01:01.000Z" title="发表于 2022-05-23 01:01:01">2022-05-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%BF%9B%E9%98%B6/">交易进阶</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87/">技术指标</a></span></div><div class="content">技术指标的几个认知 基于历史重复  所有的技术指标都是统计学的一部分，它存在的基础在于 “历史会重演”这个基础逻辑，如果这个逻辑不存在了，所有的技术指标都没有实际意义，都只是心理安慰。 我们大A创建的是前无古人后无来者的伟大“中国特色社会主义市场经济”，我们创造的是“中国经济起飞”的世界奇迹，技术指标不好使，也是常态！ MA指标大约在18世纪提出的理论基础吧。移动平均线（Moving Average, MA）是通过计算过去一段特定时间内证券（如股票、期货、外汇）的平均收盘价，并将这些点连成一条曲线，用以平滑价格数据，识别趋势方向的指标。 趋势交易的趋势线来自与此！,几乎所有的均线系统的指标，都来自此指标的变形、变种，派生。 移动平均线（MA）是技术分析的基石，它通过平滑价格、揭示平均成本来帮助我们：  看趋势： 观察均线排列（多头&#x2F;空头）。找位置： 识别关键的支撑和压力位。定信号： 捕捉金叉和死叉的买卖时机。  MA指标在股票软件的主图上，在股票软件上，有详细的指标说明。对于趋势交易者来说：只有2条重要的规则：  1、不做MA20向下的股票。2、不做股价低于MA20的股票。   MACD指标大...</div></div></div><div class="recent-post-item"><div class="post_cover"><a href="/2022/05/22/W20220522/" title="热点题材五部曲【虎口拔牙】"><img class="post-bg" src="/image/post/IMG032.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="热点题材五部曲【虎口拔牙】"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/05/22/W20220522/" title="热点题材五部曲【虎口拔牙】">热点题材五部曲【虎口拔牙】</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-05-21T17:01:01.000Z" title="发表于 2022-05-22 01:01:01">2022-05-22</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E4%BA%A4%E6%98%93%E8%BF%9B%E9%98%B6/">交易进阶</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B4%A6%E6%88%B7%E4%BB%B7%E5%80%BC/">账户价值</a></span></div><div class="content">热点题材在哪里？现在是信息扁平化的时代，市场上的热点、从各种媒体都可以获得到。比如：2015年的“煤飞色舞”、2020年的“吃药喝酒”、2021的“茅20”、2022“光伏新能源”、2023年的“中特估”、“AI”、目前的“纯血鸿蒙”、“减肥药”、只要翻阅一下财经频道，都能知道。 每日的公开资料“龙虎榜”，是市场资金最集中的地方。龙虎榜代表着市场游资与机构等等整个市场情绪的方向，也是市场政策、题材、热点的引导者。热点初步形成龙虎榜【很可能成为一日游】，龙虎榜被市场认可后并板块题材爆发【可能成为热点】。 追热点题材你必须知道的 热点题材：是资金推动的。就是有资金实力的庄家发动、主导的行情。  那么肯定是庄家吃肉，散户跟着喝汤。热点题材的启动、停止。有规律，也没有规律。完全是庄家的赚钱心情确定。这时候的技术分析，指标趋势，几乎是无效的。都是赌博。赌庄家的心情。  热点题材：要追早追、必须追“龙一”  先下手为强 ：既然是资金驱动的行情，它和什么PB、PE、TTM、没有什么关系。分析这，分析那都是徒劳。只和庄家的资金实力、和庄家的调动资源的能力决定一切。务必追龙一：龙一，是庄家们精挑细选出来的，龙二、龙三都是...</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/4/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/#content-inner">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/#content-inner">6</a><a class="page-number" href="/page/7/#content-inner">7</a><a class="extend next" rel="next" href="/page/6/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/image/blog/gu.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">股作手</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">49</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://t.me/akaValuesBot"><i class="fa-brands fa-bots"></i><span>Messenger</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://t.me/akaValuesBot" target="_blank" title="Telegram"><i class="fa-brands fa-telegram" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://t.me/akaValuesBot" target="_blank" title="Messenger"><i class="fa-brands fa-facebook-messenger" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><br>改变交易结果：<br>---------<br><br>首先要改变交易的思维，<br>通过思维改变交易的行为；<br>最后做到知行合一；<br><br>---------<br>​妳做到了吧！</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/07/28/R20260728/" title="前方高能！写在巨无霸上市之际"><img src="/image/post/IMG114.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前方高能！写在巨无霸上市之际"/></a><div class="content"><a class="title" href="/2026/07/28/R20260728/" title="前方高能！写在巨无霸上市之际">前方高能！写在巨无霸上市之际</a><time datetime="2026-07-27T17:01:01.000Z" title="发表于 2026-07-28 01:01:01">2026-07-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/07/04/R20260704/" title="(2026年Q2成绩单)牛市如何保住收益！"><img src="/image/post/IMG113.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="(2026年Q2成绩单)牛市如何保住收益！"/></a><div class="content"><a class="title" href="/2026/07/04/R20260704/" title="(2026年Q2成绩单)牛市如何保住收益！">(2026年Q2成绩单)牛市如何保住收益！</a><time datetime="2026-07-03T17:01:01.000Z" title="发表于 2026-07-04 01:01:01">2026-07-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/06/02/R20260602/" title="国家队撤了？！"><img src="/image/post/IMG103.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="国家队撤了？！"/></a><div class="content"><a class="title" href="/2026/06/02/R20260602/" title="国家队撤了？！">国家队撤了？！</a><time datetime="2026-06-01T17:01:01.000Z" title="发表于 2026-06-02 01:01:01">2026-06-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/03/30/R20260330/" title="(2026年Q1成绩单)极致抱团、昔日重现！"><img src="/image/post/IMG101.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="(2026年Q1成绩单)极致抱团、昔日重现！"/></a><div class="content"><a class="title" href="/2026/03/30/R20260330/" title="(2026年Q1成绩单)极致抱团、昔日重现！">(2026年Q1成绩单)极致抱团、昔日重现！</a><time datetime="2026-03-29T17:01:01.000Z" title="发表于 2026-03-30 01:01:01">2026-03-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/24/R20251224/" title="(2025年Q4成绩单)拥抱泡沫，顺势而为！"><img src="/image/post/IMG099.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="(2025年Q4成绩单)拥抱泡沫，顺势而为！"/></a><div class="content"><a class="title" href="/2025/12/24/R20251224/" title="(2025年Q4成绩单)拥抱泡沫，顺势而为！">(2025年Q4成绩单)拥抱泡沫，顺势而为！</a><time datetime="2025-12-23T17:01:01.000Z" title="发表于 2025-12-24 01:01:01">2025-12-24</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BA%A4%E6%98%93%E5%9F%BA%E7%A1%80/"><span class="card-category-list-name">交易基础</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BA%A4%E6%98%93%E8%AF%AD%E5%BD%95/"><span class="card-category-list-name">交易语录</span><span class="card-category-list-count">33</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E4%BA%A4%E6%98%93%E8%BF%9B%E9%98%B6/"><span class="card-category-list-name">交易进阶</span><span class="card-category-list-count">10</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E4%BA%A4%E6%98%93%E7%B3%BB%E7%BB%9F/" style="font-size: 1.2em; color: #999da3">交易系统</a> <a href="/tags/%E7%89%9B%E7%89%9B/" style="font-size: 1.35em; color: #99a3b1">牛牛</a> <a href="/tags/%E5%85%A5%E5%B8%82%E7%AC%AC%E4%B8%80%E8%AF%BE/" style="font-size: 1.25em; color: #999fa7">入市第一课</a> <a href="/tags/%E9%80%89%E8%82%A1%E7%A7%98%E7%B1%8D/" style="font-size: 1.1em; color: #999">选股秘籍</a> <a href="/tags/%E8%B6%8B%E5%8A%BF%E4%BA%A4%E6%98%93/" style="font-size: 1.5em; color: #99a9bf">趋势交易</a> <a href="/tags/%E7%86%8A%E7%86%8A/" style="font-size: 1.4em; color: #99a5b6">熊熊</a> <a href="/tags/%E8%B4%A6%E6%88%B7%E4%BB%B7%E5%80%BC/" style="font-size: 1.15em; color: #999b9e">账户价值</a> <a href="/tags/%E7%86%8A%E7%89%9B/" style="font-size: 1.3em; color: #99a1ac">熊牛</a> <a href="/tags/%E6%8A%95%E8%B5%84%E5%BF%83%E6%80%81/" style="font-size: 1.1em; color: #999">投资心态</a> <a href="/tags/%E6%88%90%E7%BB%A9%E5%8D%95/" style="font-size: 1.45em; color: #99a7ba">成绩单</a> <a href="/tags/%E6%8A%80%E6%9C%AF%E6%8C%87%E6%A0%87/" style="font-size: 1.1em; color: #999">技术指标</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      <a class="card-more-btn" href="/archives/"
+            title="查看更多">
+            <i class="fas fa-angle-right"></i>
+          </a>
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/07/">
+            <span class="card-archive-list-date">
+              七月 2026
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/06/">
+            <span class="card-archive-list-date">
+              六月 2026
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2026/03/">
+            <span class="card-archive-list-date">
+              三月 2026
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/12/">
+            <span class="card-archive-list-date">
+              十二月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/09/">
+            <span class="card-archive-list-date">
+              九月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/07/">
+            <span class="card-archive-list-date">
+              七月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/04/">
+            <span class="card-archive-list-date">
+              四月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/12/">
+            <span class="card-archive-list-date">
+              十二月 2024
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">49</div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By 股作手</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.2</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.4</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.4"></script><script src="/js/main.js?v=5.5.4"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js@3.0.0/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  },
+  processSubtitle: (content, extraContents = []) => {
+    if (true) {
+      const sub = [].slice()
+
+      if (extraContents.length > 0) {
+        sub.unshift(...extraContents)
+      }
+
+      if (typeof content === 'string') {
+        sub.unshift(content)
+      } else if (Array.isArray(content)) {
+        sub.unshift(...content)
+      }
+
+      sub.length > 0 && typedJSFn.init(sub)
+    } else {
+      document.getElementById('subtitle').textContent = typeof content === 'string' ? content :
+        (Array.isArray(content) && content.length > 0 ? content[0] : '')
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  btf.getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js')
+    .then(() => {
+      jinrishici.load(result => {
+        if (result && result.data && result.data.content) {
+          typedJSFn.processSubtitle(result.data.content)
+        } else {
+          throw new Error('Failed to parse the return value of Jinrishici API')
+        }
+      })
+    })
+    .catch(err => {
+      console.error('Failed to get the Jinrishici API:', err)
+      typedJSFn.processSubtitle(0)
+    })
+}
+typedJSFn.run(subtitleType)
+</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-ribbon.min.js" size="128" alpha="0.6" zIndex="-1" mobile="true" data-click="false"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="股作手" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.4"></script></div></div></body></html>
